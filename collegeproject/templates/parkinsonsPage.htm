@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+        
+   <!-- <form action="" method="POST">
+      {% csrf_token %}
+      <h1 class="text-center pt-2" style="font-family: Arial, sans-serif; font-size: 3rem; font-weight: bold; color: #3333;">DIABETES PREDICTION MODEL EXPERIMENT</h1>
+
+      <div  class="mx-auto" style="width: 700px; height: 1300px; background: linear-gradient(to bottom right, #33ccff, #ff99cc);">
+        <div class="d-flex justify-content-center align-items-center vh-50 px-md-5 mt-5 pt-5">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="MDVP_Fo_Hz" placeholder="MDVP_Fo_Hz" required>
+                <label for="MDVP_Fo_Hz">MDVP_Fo_Hz</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="MDVP_Fhi_Hz" placeholder="MDVP_Fhi_Hz" required>
+                <label for="MDVP_Fhi_Hz">MDVP_Fhi_Hz</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="MDVP_Flo_Hz" placeholder="MDVP_Flo_Hz" required>
+                <label for="MDVP_Flo_Hz">MDVP_Flo_Hz</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="MDVP_Jitter" placeholder="MDVP_Jitter" required>
+                <label for="MDVP_Jitter">MDVP_Jitter</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="MDVP_Jitter_Abs" placeholder="MDVP_Jitter_Abs" required>
+                <label for="MDVP_Jitter_Abs">MDVP_Jitter_Abs</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="MDVP_RAP" placeholder="MDVP_RAP" required>
+                <label for="MDVP_RAP">MDVP_RAP</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="MDVP_PPQ" placeholder="MDVP_PPQ" required>
+                <label for="MDVP_PPQ">MDVP_PPQ</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="Jitter_DDP" placeholder="Jitter_DDP" required>
+                <label for="Jitter_DDP">Jitter_DDP</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="MDVP_Shimmer" placeholder="MDVP_Shimmer" required>
+                  <label for="MDVP_Shimmer">MDVP_Shimmer</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="MDVP_Shimmer_dB" placeholder="MDVP_Shimmer_dB" required>
+                  <label for="MDVP_Shimmer_dB">MDVP_Shimmer_dB</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="Shimmer_APQ3" placeholder="Shimmer_APQ3" required>
+                  <label for="Shimmer_APQ3">Shimmer_APQ3</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="Shimmer_APQ5" placeholder="Shimmer_APQ5" required>
+                  <label for="Shimmer_APQ5">Shimmer_APQ5</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="MDVP_APQ" placeholder="MDVP_APQ" required>
+                  <label for="MDVP_APQ">MDVP_APQ</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="Shimmer_DDA" placeholder="Shimmer_DDA" required>
+                  <label for="Shimmer_DDA">Shimmer_DDA</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="NHR" placeholder="NHR" required>
+                  <label for="NHR">NHR</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="HNR" placeholder="HNR" required>
+                  <label for="HNR">HNR</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="RPDE" placeholder="RPDE" required>
+                  <label for="RPDE">RPDE</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="DFA" placeholder="DFA" required>
+                  <label for="DFA">DFA</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="spread1" placeholder="spread1" required>
+                  <label for="spread1">spread1</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="spread2" placeholder="spread2" required>
+                  <label for="spread2">spread2</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="D2" placeholder="D2" required>
+                  <label for="D2">D2</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="PPE" placeholder="PPE" required>
+                  <label for="PPE">PPE</label>
+                </div>
+              </div>
+          </div>
+         
+        </div>
+        <div style="text-align:center;">
+            <button type="submit" class="btn btn-primary btn-lg rounded mt-5">Predict</button>
+          </div>
+          {% if parkinsonsresults %}
+          <h1 class=" text-light font-weight-bold fs-1 p-3 pr-4">Prediction : {{parkinsonsresults}}</h1>
+      {% endif %} 
+      </div>
+
+
+    </form> -->
+
+    <H1>under maintence..!</H1>
+
+</body>
+</html>
+
+
+
+

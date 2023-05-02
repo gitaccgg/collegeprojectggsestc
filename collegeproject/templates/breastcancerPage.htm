@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+        
+   <form action="" method="POST">
+      {% csrf_token %}
+      <h1 class="text-center pt-2" style="font-family: Arial, sans-serif; font-size: 3rem; font-weight: bold; color: #3333;">BREAST CANCER PREDICTION MODEL EXPERIMENT</h1>
+
+      <div  class="mx-auto" style="width: 700px; height: 1270px; background: linear-gradient(to bottom right, #33ccff, #ff99cc);">
+        <div class="d-flex justify-content-center align-items-center vh-50 px-md-5 mt-5 pt-5">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="radius_mean" placeholder="radius_mean" required>
+                <label for="radius_mean">radius_mean</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="texture_mean" placeholder="texture_mean" required>
+                <label for="texture_mean">texture_mean</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="perimeter_mean" placeholder="perimeter_mean" required>
+                <label for="perimeter_mean">perimeter_mean</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="area_mean" placeholder="area_mean" required>
+                <label for="area_mean">area_mean</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="smoothness_mean" placeholder="smoothness_mean" required>
+                <label for="smoothness_mean">smoothness_mean</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="compactness_mean" placeholder="compactness_mean" required>
+                <label for="compactness_mean">compactness_mean</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="concavity_mean" placeholder="concavity_mean" required>
+                <label for="concavity_mean">concavity_mean</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-floating">
+                <input type="number" class="form-control" name="concave_points_mean" placeholder="concave_points_mean" required>
+                <label for="concave_points_mean">concave_points_mean</label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="symmetry_mean" placeholder="symmetry_mean" required>
+                  <label for="symmetry_mean">symmetry_mean</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="fractal_dimension_mean" placeholder="fractal_dimension_mean" required>
+                  <label for="fractal_dimension_mean">fractal_dimension_mean</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="radius_se" placeholder="radius_se" required>
+                  <label for="radius_se">radius_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="texture_se" placeholder="texture_se" required>
+                  <label for="texture_se">texture_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="perimeter_se" placeholder="perimeter_se" required>
+                  <label for="perimeter_se">perimeter_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="area_se" placeholder="area_se" required>
+                  <label for="area_se">area_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="smoothness_se" placeholder="smoothness_se" required>
+                  <label for="smoothness_se">smoothness_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="compactness_se" placeholder="compactness_se" required>
+                  <label for="compactness_se">compactness_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="concavity_se" placeholder="concavity_se" required>
+                  <label for="concavity_se">concavity_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="symmetry_se" placeholder="symmetry_se" required>
+                  <label for="symmetry_se">symmetry_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="fractal_dimension_se" placeholder="fractal_dimension_se" required>
+                  <label for="fractal_dimension_se">fractal_dimension_se</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="radius_worst" placeholder="radius_worst" required>
+                  <label for="radius_worst">radius_worst</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="perimeter_worst" placeholder="perimeter_worst" required>
+                  <label for="perimeter_worst">perimeter_worst</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="area_worst" placeholder="area_worst" required>
+                  <label for="area_worst">area_worst</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="smoothness_worst" placeholder="smoothness_worst" required>
+                  <label for="smoothness_worst">smoothness_worst</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="compactness_worst" placeholder="compactness_worst" required>
+                  <label for="compactness_worst">compactness_worst</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="concavity_worst" placeholder="concavity_worst" required>
+                  <label for="concavity_worst">concavity_worst</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="concave_points_worst" placeholder="concave_points_worst" required>
+                  <label for="concave_points_worst">concave_points_worst</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="symmetry_worst" placeholder="symmetry_worst" required>
+                  <label for="symmetry_worst">symmetry_worst</label>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" name="fractal_dimension_worst" placeholder="fractal_dimension_worst" required>
+                  <label for="fractal_dimension_worst">fractal_dimension_worst</label>
+                </div>
+              </div>
+
+          </div>
+         
+        </div>
+        <div style="text-align:center;">
+            <button type="submit" class="btn btn-primary btn-lg rounded mt-5">Predict</button>
+          </div>
+          {% if breastResult %}
+          <h1 class=" text-light font-weight-bold fs-1 p-3 pr-4">Prediction : {{breastResult}}</h1>
+      {% endif %} 
+      </div>
+
+
+    </form>
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+
+</body>
+</html>
+
+
